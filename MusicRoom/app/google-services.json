@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401930216919",
+    "firebase_url": "https://modfirebaseproject-44c0e.firebaseio.com",
+    "project_id": "modfirebaseproject-44c0e",
+    "storage_bucket": "modfirebaseproject-44c0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401930216919:android:5483fa3e1f75d5db595792",
+        "android_client_info": {
+          "package_name": "com.django.mod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401930216919-7tfj0fvvqo89uvf5av7h9v5gmjn8i7uc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.django.mod",
+            "certificate_hash": "596751ed73c642f01c7fe2eb134b8e58c4c19ea1"
+          }
+        },
+        {
+          "client_id": "401930216919-hbcc9k4ot0roqli0ch6f50o7fk2btqnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3PIymgCQKXuY1_nGY_yXekFQCXcS9ukc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401930216919-hbcc9k4ot0roqli0ch6f50o7fk2btqnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

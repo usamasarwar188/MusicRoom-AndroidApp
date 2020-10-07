@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+<include layout="@layout/sign_in"
+    android:id="@+id/layout_signin_rel"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+
+    <include layout="@layout/status_layout"
+        android:id="@+id/layout_status_rel"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+</RelativeLayout>

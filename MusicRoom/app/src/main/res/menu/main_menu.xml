@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:id="@+id/search_btn"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+
+        android:title="search"
+        />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_shuffle_black_24dp"
+        android:id="@+id/shuffle_btn"
+        android:title="shuffle"
+        />
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        android:id="@+id/play_btn"
+        android:title="play all"
+        />
+
+
+
+
+
+</menu>
+

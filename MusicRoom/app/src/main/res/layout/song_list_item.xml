@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_music_note_black_24dp"
+        android:id="@+id/thumbnail_img"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_music_note_black_24dp"
+        android:layout_marginLeft="17dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignTop="@id/thumbnail_img"
+
+        android:layout_toStartOf="@id/song_options"
+        android:layout_toEndOf="@id/thumbnail_img"
+        android:text="SongName-_ArtistName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/song_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@id/thumbnail_img"
+        android:layout_toRightOf="@id/thumbnail_img"
+        android:text="ArtistName"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/artist_name"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/song_options"
+        />
+
+</RelativeLayout>

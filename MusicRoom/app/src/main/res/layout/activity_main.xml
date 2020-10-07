@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:openDrawer="start">
+
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:id="@+id/main_relLayout"
+        tools:context=".Activities.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg10"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+
+        />
+
+
+
+
+    <include layout="@layout/dialog_layout"
+        android:id="@+id/dialog_layout"
+        />
+
+
+
+
+
+    <View android:layout_height="7dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/dialog_layout"
+        android:background="@drawable/shadow"
+        android:id="@+id/shadow"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/dummy_view"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_alignBottom="@id/dummy_view"
+        android:layout_below="@id/shadow"
+        />
+
+
+
+
+
+    <include layout="@layout/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottom_dialog"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:padding="0dp"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="-10dp"
+        android:layout_alignTop="@id/dummy_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="-10dp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        />
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
